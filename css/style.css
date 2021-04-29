@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* 共通パーツ */
+html {
+  font-size: 62.5%;
+}
+
+body{
+  color: #333;
+  font-size: 1.6rem;
+  font-family: "YuGothic",  Yu Gothic,  sans-serif;
+}
+
+li{
+  list-style-type: none;
+}
+
+#mainVisual{
+  background:linear-gradient(to bottom, #00afcc, #a0d8ef);
+  height: 100vh;
+}
+
+.nav-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.gnavi{
+  background-color: #7d7d7d;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 0 30px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+.gnavi ul{
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.gnavi ul li a{
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+}
+.gnavi ul li a:hover{
+  color: #333;
+  background-color: #eb3c55;
+  opacity: 0.5;
+  transition: 0.6s;
+}
+.mv-wrapper{
+  max-width: 1024px;
+  margin-top: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+  top: 80px;
+}
+.mv-left{
+  position: absolute;
+  top: 120px;
+  left: 6%;
+}
+.mv-left img{
+  width: 320px;
+}
+.mv-right{
+  position: absolute;
+  top: 150px;
+  right: 6%;
+}
+h1, .price{
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1{
+  font-size: 6.4rem;
+}
+
+.price1{
+  font-size: 4.8rem;
+  margin-right: 20px;
+}
+
+.price2{
+  font-size: 6.0rem;
+}
+
+.price span{
+  margin-top: 14px;
+}
+
+.purchase-button{
+  filter: drop-shadow(4px 4px 6px #404040);
+  position: relative;
+  top: 50px;
+  left: 50%;
+}
+
+.purchase-button a{
+  background-color: #eb3c55;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+
+.purchase-button a:hover{
+  background-color: #fff;
+  color: #eb3c55;
+  transition: 0.6s;
+}
+#concept {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+/* 共通パーツ */
+h2 {
+  font-size: 3.2rem;
+  margin-bottom: -5px;
+}
+.ja-title {
+  font-size: 1.4rem;
+}
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* 共通パーツ */
