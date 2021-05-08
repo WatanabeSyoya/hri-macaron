@@ -309,6 +309,7 @@ h2 {
   transition: 0.6s;
 }
 
+
 #purchase-area{
   background:linear-gradient(to bottom, #e095a0, #e4e0e1);
   padding-top: 70px;
@@ -346,14 +347,18 @@ h2 {
   background-color: #eb3c55;
   transition: 0.6s;
 }
-.lineup-product{
+
+/* 共通パーツ */
+.lineup-product, .package-lineup{
   width: 32%;
 }
-.product-image{
+.product-image, .package-image{
   width: 100%;
   border-radius: 20px;
   border: 1px solid #00afcc;
 }
+/* 共通パーツ */
+
 .product-about{
   margin-top: 20px;
 }
@@ -367,7 +372,6 @@ h2 {
 .more-product{
   text-align: center;
 }
-
 .btn-more{
   display: inline-block;
   font-size: 2.4rem;
@@ -380,6 +384,92 @@ h2 {
   margin-top: 40px;
 }
 .btn-more:hover{
+  background-color: #eb3c55;
+  color: #fff;
+  transition: 0.6s;
+}
+
+#package{
+  padding-top: 70px;
+}
+.package-wrapper{
+  max-width: 1024px;
+}
+.pack-text{
+  position: relative;
+  height: 200px;
+}
+.package-text, .package-name{
+  margin-top: 20px;
+}
+.package-number{
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.package-number, .value{
+  display: inline-block;
+}
+.value{
+  font-size: 2.2rem;
+  float: right;
+}
+.value small{
+  font-size: 1.6rem;
+}
+.purchase-wrapper{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.number-form{
+  border: 1px solid #333;
+  background-color: #fff;
+  width: 15%;
+  height: 40px;
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+.purchase-number{
+  position: relative;
+  right: 4px;
+}
+.select a{
+  display: inline-block;
+  padding: 6px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6rem;
+  border: 1px solid #000000;
+  line-height: 1.2;
+}
+.select{
+  margin-left: 16px;
+}
+.select a:hover{
+  background-color: #eb3c55;
+  color: #fff;
+  transition: 0.6s;
+}
+#sum_btn{
+  display: block;
+  font-size: 2.2rem;
+  padding: 10px 40px;
+  margin: 50px auto;
+  text-decoration: none;
+  background: #fff;
+  color: #333;
+  border: 1px solid #00afcc;
+  border-radius: 5px 5px 15px 15px;
+}
+
+#sum_btn:hover{
   background-color: #eb3c55;
   color: #fff;
   transition: 0.6s;
