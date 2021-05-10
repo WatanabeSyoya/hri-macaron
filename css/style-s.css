@@ -1,0 +1,69 @@
+/* ベース */
+*, *:before, *:after {
+box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.wrap{
+  overflow: hidden;
+}
+body{
+  color: #333;
+  font-size: 1.4rem;
+  font-family: "YuGothic",  Yu Gothic,  sans-serif;
+}
+li{
+  list-style-type: none;
+}
+
+
+.gnavi{
+  display: none;
+}
+/* ハンバーガーメニュー */
+.menu-trigger {
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    right: 5%;
+    top: 5%;
+    width: 56px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 3;
+}
+.menu-trigger span {
+    display: block;
+    position: absolute;
+    width: 56px;
+    border-bottom: solid 4px #fff;
+    border-radius: 4px;
+    transition: .35s ease-in-out;
+}
+.menu-trigger span:nth-child(1) {
+  top: 0;
+}
+.menu-trigger span:nth-child(2) {
+  top: 13px;
+}
+.menu-trigger span:nth-child(3) {
+  top: 26px;
+}
+#mainVisual{
+  background: linear-gradient(to bottom, #00afcc, #a0d8ef);
+  height: 100vh;
+}
+.mv-left{
+  width: 100%;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  z-index: 1;
+}
+.mv-left img{
+  width: 45%;
+}
+.mv-right{
+  width: 100%;
+  text-align: center;
+  margin-top: 120px;
+}
