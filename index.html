@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="./css/style-l.css" media="screen and (min-width:769px)">
   <!-- 画面幅が768px以下の場合、style-s.cssの内容が適用 -->
   <link rel="stylesheet" href="./css/style-s.css" media="screen and (max-width:768px)">
+  <!-- Javascript・jQueryのファイルリンク -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
   <div>
@@ -174,17 +177,18 @@
             <p class="ja-title">オススメのラインナップ</p>
           </div>
           <div class="lineup-menu">
-            <ul class="filter">
-              <li class="lineup-tab"><a class="all" href="#">all</a></li>
-              <li class="lineup-tab"><a class="tea" href="#">tea time</a></li>
-              <li class="lineup-tab"><a class="party" href="#">party</a></li>
-              <li class="lineup-tab"><a class="wine" href="#">with wine</a></li>
-              <li class="lineup-tab"><a class="office" href="#">office</a></li>
-              <li class="lineup-tab"><a class="walk" href="#">walk and eat</a></li>
+            <ul class="cta filter">
+              <li class="lineup-tab active"><a class="all active" data-filter="all" href="#">all</a></li>
+              <li class="lineup-tab"><a class="tea" data-filter="tea" href="#">tea time</a></li>
+              <li class="lineup-tab"><a class="party" data-filter="party" href="#">party</a></li>
+              <li class="lineup-tab"><a class="wine" data-filter="wine" href="#">with wine</a></li>
+              <li class="lineup-tab"><a class="office" data-filter="office" href="#">office</a></li>
+              <li class="lineup-tab"><a class="walk" data-filter="walk" href="#">walk and eat</a></li>
             </ul>
           </div>
           <div class="product-wrapper">
-            <div class="lineup-product">
+            <!-- 商品1つ目 -->
+            <div class="lineup-product wine" data-category="wine">
               <img class="product-image" src="./image/lineup/lemon.jpg" alt="レモン">
               <div class="lineup-about">
                 <div class="product-name">
@@ -194,7 +198,8 @@
                 <p class="product-about about-text">レモンの爽やかな酸味の切れ味が絶妙な逸品です。</p>
               </div>
             </div>
-            <div class="lineup-product">
+            <!-- 商品2つ目 -->
+            <div class="lineup-product tea" data-category="tea">
               <img class="product-image" src="./image/lineup/pistachio.jpg" alt="ピスタチオ">
               <div class="lineup-about">
                 <div class="product-name">
@@ -204,7 +209,8 @@
                 <p class="product-about about-text">香り・コク・旨みが凝縮したピスタチオならではの気品漂う逸品です。</p>
               </div>
             </div>
-            <div class="lineup-product">
+            <!-- 商品3つ目 -->
+            <div class="lineup-product party" data-category="party">
               <img class="product-image" src="./image/lineup/strawberry.jpg" alt="ストロベリー">
               <div class="lineup-about">
                 <div class="product-name">
@@ -393,8 +399,8 @@
             </div>
           </div>
         </div>
-        <small>Copyright © 2019 H.R.I inc. All Rights Reserved.</small>
       </div>
+      <small>Copyright © 2019 H.R.I inc. All Rights Reserved.</small>
     </footer>
   </div>
 </body>
