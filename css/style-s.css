@@ -250,18 +250,18 @@ h2{
   font-weight: bold;
   margin-top: 5px;
 }
+
+
+
 #staff{
   background-color: #e4ecef;
 }
-
 .staff-container{
   position: relative;
 }
-
 .staff-box{
   display: none;
 }
-
 .staff-box.active{
   display: block;
   /* .staff-containerの領域に.staff-boxが入るように */
@@ -322,6 +322,7 @@ h2{
   border-right: 2px solid #000;
   transform: rotate(45deg);
 }
+
 
 
 .life-wrapper{

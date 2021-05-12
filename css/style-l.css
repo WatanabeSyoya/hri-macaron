@@ -222,9 +222,12 @@ h2 {
   position: relative;
 }
 .staff-box{
+  display: none;
+}
+.staff-box.active{
   display: flex;
   flex: nowrap;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 80%;
   margin: 0 auto;
 }
