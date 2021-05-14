@@ -54,3 +54,31 @@ $(function () {
     return false;
   });
 });
+
+
+$(function () {
+  var $filters = $('.filter [data-filter]'),
+    $boxes = $('.product-wrapper [data-category]');
+
+  $filters.on('click', function (e) {
+    e.preventDefault();
+    var $this = $(this);
+    $filters.removeClass('active');
+    $this.addClass('active');
+
+    var $filterTime = $this.attr('data-filter');
+
+    if ($filterTime == 'all') {
+      $boxes.removeClass('is-animated')
+        .fadeOut().promise().done(function () {
+          $boxes.addClass('is-animated').fadeIn();
+        });
+    } else {
+      $boxes.removeClass('is-animated')
+        .fadeOut().promise().done(function () {
+          $boxes.filter('[data-category = "' + $filterTime + '"]')
+            .addClass('is-animated').fadeIn();
+        });
+    }
+  });
+});
